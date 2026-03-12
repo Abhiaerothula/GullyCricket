@@ -7,8 +7,8 @@ export default function HomePage({css,isDark,matches,setTab,setShowNewMatch,setA
     <div className="page-pad">
       {/* Full-width hero */}
       <div style={{borderRadius:20,overflow:'hidden',position:'relative',background:`linear-gradient(135deg,${C.darkGray},${C.midGray})`,padding:'28px 32px',border:`1px solid ${C.yellow}33`,marginBottom:0}}>
-        <div style={{position:'absolute',top:-40,right:-40,width:200,height:200,borderRadius:'50%',background:`${C.yellow}08`}}/>
-        <div style={{position:'absolute',bottom:-30,left:-30,width:150,height:150,borderRadius:'50%',background:`${C.yellow}06`}}/>
+        <div style={{position:'absolute',top:-40,right:-40,width:200,height:200,borderRadius:'50%',background:`${C.yellow}08`,pointerEvents:'none'}}/>
+        <div style={{position:'absolute',bottom:-30,left:-30,width:150,height:150,borderRadius:'50%',background:`${C.yellow}06`,pointerEvents:'none'}}/>
         <div style={{fontSize:28,marginBottom:6}}>🏏</div>
         <div style={{fontSize:26,fontWeight:900,color:C.white,marginBottom:8,lineHeight:1.2}}>Ready to score<br/><span style={{color:C.yellow}}>today's match?</span></div>
         <div style={{fontSize:13,color:'rgba(255,255,255,0.5)',marginBottom:20}}>{live.length>0?`${live.length} match live now 🔴`:'No live matches — start one below'}</div>
